@@ -1,0 +1,15 @@
+.header {
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  padding: 45px 0 0;
+  background-color: rgba($color-dark, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  @include sm {
+    padding: 15px 0 0;
+  }
+}
