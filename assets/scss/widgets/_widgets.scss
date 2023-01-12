@@ -1,0 +1,33 @@
+.widgets {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 15px 20px;
+  border-radius: 7px;
+  background-color: rgba($color-dark, 0.5);
+  &__title {
+    position: relative;
+    margin: 0 0 28px;
+    letter-spacing: 1.27px;
+    font-family: $font-header;
+    font-size: 16.8px;
+    font-weight: 300;
+    &::after {
+      position: absolute;
+      bottom: -11px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color-dark, 0.5);
+      content: '';
+    }
+  }
+  &-about {
+    padding-bottom: 14px;
+  }
+  &__content {
+    color: $color-gray;
+    &-text {
+      line-height: 28px;
+    }
+  }
+}

@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: top center;
 }
 a {
   text-decoration: none;
@@ -20,4 +21,17 @@ a {
 }
 .wrapper {
   padding: 0 15px $gap;
+}
+.container {
+  display: flex;
+  max-width: 1320px;
+  margin: 0 auto 15px;
+  gap: $gap;
+  @include lg {
+    flex-wrap: wrap;
+  }
+  @include md {
+    gap: 15px;
+    margin-bottom: 0;
+  }
 }

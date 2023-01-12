@@ -1,0 +1,26 @@
+.footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  .widgets__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .widgets__title {
+    &::after {
+      width: 167.4%;
+      right: -60px;
+      @include xx {
+        width: 146%;
+        right: -40px;
+      }
+    }
+  }
+  .widgets {
+    padding: 15px;
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}

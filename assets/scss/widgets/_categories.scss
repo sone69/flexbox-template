@@ -1,0 +1,19 @@
+.widgets-categories {
+  padding-bottom: 15px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    color: $color-light;
+    a {
+      padding: 5px 0;
+      transition: color 0.5s, transform 0.5s, padding-left 0.5s;
+      border-radius: 4px;
+      &:hover {
+        padding-left: 10px;
+        color: $color-accent;
+        background-color: rgba($color-dark, 0.4);
+        @include text-shadow;
+      }
+    }
+  }
+}

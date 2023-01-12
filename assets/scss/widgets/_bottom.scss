@@ -1,0 +1,19 @@
+.widgets-bottom {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  @include md {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+}
+.widgets__item {
+  width: 25%;
+  padding-bottom: 14px;
+  @include md-xs {
+    width: calc(50% - 7.5px);
+  }
+  @include xs {
+    width: 100%;
+  }
+}

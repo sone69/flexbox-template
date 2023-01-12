@@ -1,0 +1,46 @@
+.main {
+  flex-grow: 2;
+  order: 2;
+
+  @include lg-min {
+    max-width: calc(100% - 520px);
+    margin-bottom: 23px;
+  }
+  @include lg-md {
+    max-width: calc(100% - 250px);
+    margin-bottom: 8px;
+  }
+  @include md {
+    order: 1;
+    margin-bottom: 23px;
+  }
+  @include xx {
+    order: 0;
+  }
+  &__title {
+    height: 58px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: $gap;
+    padding: 8px 12px;
+    letter-spacing: 3px;
+    border-radius: 7px;
+    background: linear-gradient(-90deg, rgba($color-dark, 0) 0%, rgba($color-dark, 0.5) 10%, rgba($color-dark, 0.8) 100%);
+    font-family: $font-header;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 21px;
+    @include sm-xs {
+      letter-spacing: 3px;
+      font-size: 21px;
+    }
+    @include sm-xx {
+      height: 47.5px;
+    }
+    @include xs {
+      letter-spacing: 3px;
+      font-size: 14px;
+    }
+  }
+}

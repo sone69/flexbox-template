@@ -9,6 +9,7 @@
   background-color: rgba($color-dark, 0.5);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  overflow: hidden;
   @include sm {
     padding: 15px 0 0;
   }

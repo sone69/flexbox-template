@@ -71,6 +71,10 @@
     @include sm-min {
       display: none;
     }
+    @include sm {
+      margin: 0;
+      top: 15px;
+    }
 
     &-row {
       display: block;
