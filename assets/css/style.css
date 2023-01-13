@@ -202,6 +202,7 @@ a {
   display: -ms-flexbox;
   display: flex;
 
+  width: 100%;
   max-width: 1320px;
   margin: 0 auto 15px;
 
@@ -560,11 +561,6 @@ a {
   width: 100%;
   max-width: 100%;
   height: auto;
-}
-.main__item-image img {
-  display: block;
-
-  height: 100%;
 }
 
 .sidebar-left {
@@ -1056,8 +1052,7 @@ a {
     height: 47.5px;
   }
   .main__content {
-    width: 100%;
-    width: 685px;
+    width: calc(100% + 15px);
   }
   .main__item {
     -webkit-box-flex: 0;
